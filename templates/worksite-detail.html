@@ -1,0 +1,369 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load widget_tweaks %}
+{% block body_block %}
+
+
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.ico" type="image/ico" />
+    <title>Infornest</title>
+    <!-- Bootstrap -->
+    <!-- Datatables -->
+    <!-- Select2 -->
+    <!-- Custom Theme Style -->
+</head>
+
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col menu_fixed">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a href="#" class="site_title"><img src="{% static 'images/logo-small.png' %}" alt=""></a>
+                    </div>
+                    <!-- menu profile quick info -->
+                    <div class="profile clearfix">
+                        <div class="profile_info">
+                            <a href="#" class="profile-logo"><img src='{% static "images/CBM-logo-side.png" %}' alt=""></a>
+                            <div class="profile-name">
+                                <h2>CBM Pte Ltd</h2>
+                                <p>cbm@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /menu profile quick info -->
+                    <!-- sidebar menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <ul class="nav side-menu">
+                                <li><a href="{% url 'dash' %}">Dashboard</a> </li>
+                                <li><a>Add Worksite </a></li>
+                                <li><a>Route Listing </a></li>
+                                <li><a>User Management <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="#">Link 1</a></li>
+                                        <li><a href="#">Link 2</a></li>
+                                        <li><a href="#">Link 3</a></li>
+                                    </ul>
+                                </li>
+                                <li><a>Reporting <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="#">Incident Reports</a></li>
+                                        <li><a href="#">Patrol Reports</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /sidebar menu -->
+                </div>
+            </div>
+            <!-- page content -->
+            <div class="right_col" role="main">
+                <!-- top navigation -->
+                <div class="top_nav">
+                    <div class="nav_menu">
+                        <nav>
+                            <div class="nav toggle">
+                                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                            </div>
+                            <div class="page-title">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h2>623456</h2>
+                                        <a class="brad" href="{% url 'dash' %}">Dashboard</a> <a class="brad" href="#">/ Reporting</a>
+                                        <a href="#" class="brad">/ Patrol Reports</a> <span>/ 623456</span>
+                                    </div>
+                                    <div class="col-md-6 search-action">
+                                        <a href="#" class="btn btn-cancle">Edit</a>
+                                        <a href="#" class="btn btn-primary">Export Report</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <!-- /top navigation -->
+                <div class="wrapper">
+                    <div class="details">
+                        <h2>Incident Detail <span class="status">Status: <span
+                                    class="inprogress">In-Progress</span></span></h2>
+                        <div class="info-bg">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Worksite Name</label>
+                                        <p>CBM</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Nature of Incident</label>
+                                        <p>Theft</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Date</label>
+                                        <p>24-Apr-2019</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Time</label>
+                                        <p>12:00 AM</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Weather</label>
+                                        <p>Summer</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Reported By</label>
+                                        <p>John Doe</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>User Type</label>
+                                        <p>Tenant Admin</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Criticality</label>
+                                        <p class="medium">Medium</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Rank</label>
+                                        <p>SSO</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-bg mb20">
+                            <h4>Incident Detail</h4>
+                            <ul class="incident-detail">
+                                <li>
+                                    <h3>What happened?</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget odio eu magna
+                                        egestas rhoncus nec eget justo. Sed elementum metus in libero facilisis, sit
+                                        amet sodales turpis ullamcorper. Pellentesque id nibh ex. Nunc at eros erat.
+                                        Phasellus hendrerit at ligula tincidunt rutrum. </p>
+                                </li>
+                                <li>
+                                    <h3>What happened?</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget odio eu magna
+                                        egestas rhoncus nec eget justo. Sed elementum metus in libero facilisis, sit
+                                        amet sodales turpis ullamcorper. Pellentesque id nibh ex. Nunc at eros erat.
+                                        Phasellus hendrerit at ligula tincidunt rutrum. </p>
+                                </li>
+                                <li>
+                                    <h3>What happened?</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget odio eu magna
+                                        egestas rhoncus nec eget justo. Sed elementum metus in libero facilisis, sit
+                                        amet sodales turpis ullamcorper. Pellentesque id nibh ex. Nunc at eros erat.
+                                        Phasellus hendrerit at ligula tincidunt rutrum. </p>
+                                </li>
+                                <li>
+                                    <h3>What happened?</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget odio eu magna
+                                        egestas rhoncus nec eget justo. Sed elementum metus in libero facilisis, sit
+                                        amet sodales turpis ullamcorper. Pellentesque id nibh ex. Nunc at eros erat.
+                                        Phasellus hendrerit at ligula tincidunt rutrum. </p>
+                                </li>
+                                <li>
+                                    <h3>What happened?</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget odio eu magna
+                                        egestas rhoncus nec eget justo. Sed elementum metus in libero facilisis, sit
+                                        amet sodales turpis ullamcorper. Pellentesque id nibh ex. Nunc at eros erat.
+                                        Phasellus hendrerit at ligula tincidunt rutrum. </p>
+                                </li>
+                                <li>
+                                    <h3>What happened?</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget odio eu magna
+                                        egestas rhoncus nec eget justo. Sed elementum metus in libero facilisis, sit
+                                        amet sodales turpis ullamcorper. Pellentesque id nibh ex. Nunc at eros erat.
+                                        Phasellus hendrerit at ligula tincidunt rutrum. </p>
+                                </li>
+                            </ul>
+                            <div class="images-list">
+                                <h4>Images</h4>
+                                <div class="owl-carousel owl-theme makeup-content-slider">
+                                    <div class="item">
+                                        <img src='{% static "images/img-1.png" %}' class="img-responsive">
+                                    </div>
+                                    <div class="item">
+                                        <img src='{% static "images/img-2.png" %}' class="img-responsive">
+                                    </div>
+                                    <div class="item">
+                                        <img src='{% static "images/img-3.png" %}' class="img-responsive">
+                                    </div>
+                                    <div class="item">
+                                        <img src='{% static "images/img-4.png" %}' class="img-responsive">
+                                    </div>
+                                    <div class="item">
+                                        <img src='{% static "images/img-2.png" %}' class="img-responsive">
+                                    </div>
+                                    <div class="item">
+                                        <img src='{% static "images/img-3.png" %}' class="img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h2>Persons</h2>
+                        <div id="table-scroll" class="table-scroll">
+                            <div class="table-wrap">
+                                <table class="main-table table table-striped" id="datatable">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Contact Number</th>
+                                            <th scope="col">Gender</th>
+                                            <th scope="col">IC Number</th>
+                                            <th scope="col">Address</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Christie Paul</td>
+                                            <td>+65 2455 8745</td>
+                                            <td>Male</td>
+                                            <td>ABC12345K</td>
+                                            <td>Blk 3013, 03-2134 Bedok North Ave, Singapore</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Christie Paul</td>
+                                            <td>+65 2455 8745</td>
+                                            <td>Male</td>
+                                            <td>ABC12345K</td>
+                                            <td>Blk 3013, 03-2134 Bedok North Ave, Singapore</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Christie Paul</td>
+                                            <td>+65 2455 8745</td>
+                                            <td>Male</td>
+                                            <td>ABC12345K</td>
+                                            <td>Blk 3013, 03-2134 Bedok North Ave, Singapore</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Christie Paul</td>
+                                            <td>+65 2455 8745</td>
+                                            <td>Male</td>
+                                            <td>ABC12345K</td>
+                                            <td>Blk 3013, 03-2134 Bedok North Ave, Singapore</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <h2>Authorities</h2>
+                        <div id="table-scroll" class="table-scroll">
+                            <div class="table-wrap">
+                                <table class="main-table table table-striped" id="datatable2">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Contact Name</th>
+                                            <th scope="col">Contact Number</th>
+                                            <th scope="col">Department</th>
+                                            <th scope="col">Designation</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Police</td>
+                                            <td>Christie Paul</td>
+                                            <td>+65 2455 8745</td>
+                                            <td>Investigation</td>
+                                            <td>Investigating Officer</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Police</td>
+                                            <td>Christie Paul</td>
+                                            <td>+65 2455 8745</td>
+                                            <td>Investigation</td>
+                                            <td>Investigating Officer</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <h2>Closure</h2>
+                        <div id="table-scroll" class="table-scroll">
+                            <div class="table-wrap">
+                                <table class="main-table table table-striped" id="datatable3">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Date of Follow Up</th>
+                                            <th scope="col">Estimated Damages</th>
+                                            <th scope="col">Description of Follow Up and Contact Person</th>
+                                            <th scope="col">Further Instructions by OE/ OM/ Client</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>25-Apr-2019</td>
+                                            <td>S$ 5000</td>
+                                            <td>Lorem ipsum dolor sit amet, elit. Sed non pur</td>
+                                            <td>ILorem ipsum dolor sit amet, elit</td>
+                                        </tr>
+                                        <tr>
+                                            <td>25-Apr-2019</td>
+                                            <td>S$ 5000</td>
+                                            <td>Lorem ipsum dolor sit amet, elit. Sed non pur</td>
+                                            <td>ILorem ipsum dolor sit amet, elit</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /page content -->
+        </div>
+    </div>
+    <!-- jQuery -->
+    <!-- jQuery custom content scroller -->
+    <!-- Datatables -->
+    <script src='{% static "vendors/datatables.net-bs/js/dataTables.bootstrap.min.js" %}'></script>
+    <!-- owl carousel js -->
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
+            })
+        });
+    </script>
+    <!-- Custom Theme Scripts -->
+    <script src='{% static "js/custom.min.js" %}'></script>
+
+</body>
+{% endblock %}

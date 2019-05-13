@@ -1,0 +1,78 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    {% load staticfiles %}
+    {% load static %}
+
+    <link href='{% static "vendors/iCheck/skins/flat/green.css" %}' rel="stylesheet">
+    <!-- jQuery custom content scroller -->
+    <link href='{% static "vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" %}' rel="stylesheet" />
+    <!-- bootstrap-daterangepicker -->
+    <link href='{% static "vendors/bootstrap-daterangepicker/daterangepicker.css" %}' rel="stylesheet">
+    <!-- Datatables -->
+    <link href='{% static "vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" %}' rel="stylesheet">
+    <link href='{% static "vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" %}' rel="stylesheet">
+    <link href='{% static "vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" %}' rel="stylesheet">
+    <link href='{% static "vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" %}' rel="stylesheet">
+    <link href='{% static "vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" %}' rel="stylesheet">
+    <!-- Select2 -->
+    <link href='{% static   "vendors/select2/dist/css/select2.min.css" %}' rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href='{% static "vendors/bootstrap-daterangepicker/daterangepicker.css" %}' rel="stylesheet">
+    <!-- bootstrap-datetimepicker -->
+    <link href='{% static "vendors/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css" %}' rel="stylesheet">
+    <!-- owl-carousel css -->
+    <link href='{% static "css/owl.carousel.min.css" %}' rel="stylesheet">
+    <link href='{% static "css/owl.theme.default.min.css" %}' rel="stylesheet">
+    <link href="{% static 'vendors/bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="{% static 'vendors/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/custom.css' %}" rel="stylesheet">
+
+
+
+    <!-- <script src="{% static 'vendors/datatables.net/js/jquery.dataTables.min.js' %}"></script> -->
+    <script src="{% static 'vendors/datatables.net-bs/js/dataTables.bootstrap.min.js' %}"></script>
+    <script src="{% static 'vendors/datatables.net-buttons/js/dataTables.buttons.min.js' %}"></script>
+    <script src="{% static 'vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js' %}"></script>
+    <script src="{% static 'vendors/datatables.net-buttons/js/buttons.flash.min.js' %}"></script>
+    <script src="{% static 'vendors/datatables.net-buttons/js/buttons.html5.min.js' %}"></script>
+    <script src="{% static 'vendors/datatables.net-buttons/js/buttons.print.min.js' %}"></script>
+    <script src="{% static 'vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js' %}"></script>
+    <script src="{% static 'vendors/datatables.net-keytable/js/dataTables.keyTable.min.js' %}"></script>
+    <script src="{% static 'vendors/datatables.net-responsive/js/dataTables.responsive.min.js' %}"></script>
+    <script src="{% static 'vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js' %}"></script>
+    <script src="{% static 'vendors/datatables.net-scroller/js/dataTables.scroller.min.js' %}"></script>
+    <script src="{% static 'vendors/jszip/dist/jszip.min.js' %}"></script>
+    <!-- Bootstrap -->
+    <script src="{% static 'vendors/jquery/dist/jquery.min.js' %}"></script>
+    <script src="{% static 'vendors/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+    <!-- iCheck -->
+    <script src="{% static 'vendors/iCheck/icheck.min.js' %}"></script>
+    <!-- DateJS -->
+    <script src="{% static 'vendors/DateJS/build/date.js' %}"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="{% static 'vendors/moment/min/moment.min.js' %}"></script>
+    <script src="{% static 'vendors/bootstrap-daterangepicker/daterangepicker.js' %}"></script>
+    <script src='{% static "vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js" %}'></script>
+    <script src="{% static 'js/custom.min.js' %}"></script>
+    <script src='{% static "js/owl.carousel.min.js" %}'></script>
+    <!-- jQuery -->
+    <!-- <script src='{% static "vendors/fastclick/lib/fastclick.js" %}'></script> -->
+    <script src='{% static "vendors/datatables.net/js/jquery.dataTables.min.js" %}'></script>
+    <!-- owl carousel js -->
+    <!-- <script src='{% static "js/custom.min.js" %}'></script> -->
+  </head>
+  <body>
+    <div class='container'>
+       {% block body_block %}
+       {% endblock %}
+       </div>
+
+       <script>
+    $(document).ready(function(){
+    })l;
+</script>
+  </body>
+</html>
