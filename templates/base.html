@@ -11,6 +11,7 @@
     <title>Infornest</title>
 
     <link href='{% static "vendors/bootstrap/dist/css/bootstrap.min.css" %}' rel="stylesheet">
+    <link href='{% static "css/bootstrap-datetimepicker.min.css" %}' rel="stylesheet" media="screen">
     <link href='{% static "vendors/font-awesome/css/font-awesome.min.css" %}' rel="stylesheet">
     <link href='{% static "vendors/iCheck/skins/flat/green.css" %}' rel="stylesheet">
     <link href='{% static "vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" %}' rel="stylesheet" />
@@ -26,15 +27,14 @@
     <link href='{% static "css/owl.carousel.min.css" %}' rel="stylesheet">
     <link href='{% static "css/owl.theme.default.min.css" %}' rel="stylesheet">
     <link href='{% static "css/custom.css" %}' rel="stylesheet">
-    {% block extra_block %}{% endblock %}
   </head>
 
-
-
-  <body>
+  {% block body_block %}{% endblock %}
 
     <script src="{% static 'vendors/jquery/dist/jquery.min.js' %}"></script>
     <script src="{% static 'vendors/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap-datetimepicker.js' %}" charset="UTF-8"></script>
+    <script type="text/javascript" src="{% static 'js/locales/bootstrap-datetimepicker.fr.js' %}" charset="UTF-8"></script>
     <script src="{% static 'vendors/iCheck/icheck.min.js' %}"></script>
     <script src="{% static 'vendors/DateJS/build/date.js' %}"></script>
     <script src="{% static 'vendors/moment/min/moment.min.js' %}"></script>
@@ -54,9 +54,5 @@
     <script src="{% static 'vendors/datatables.net-scroller/js/dataTables.scroller.min.js' %}"></script>
     <script src="{% static 'vendors/jszip/dist/jszip.min.js' %}"></script>
     <script src="{% static 'js/owl.carousel.min.js' %}"></script>
-
-    {% block body_block %}{% endblock %}
+    <script src="{% static 'js/custom.min.js' %}"></script>
     {% block script %}{% endblock %}
-
-
-  </body>

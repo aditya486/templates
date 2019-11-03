@@ -24,10 +24,10 @@ app_name = 'demo_app'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('login/', views.login, name ='login'),
-    path('dashboard/', views.dasboard_view, name = 'dash'),
-    path('worksite/', views.worksite_view, name = 'work'),
-    path('Information/', views.Information, name = 'Inform'),
+    path('login/', views.login, name='login'),
+    path('dashboard/', views.dasboard_view, name='dash'),
+    path('worksite/', views.WorksiteView.as_view(), name='work'),
+    path('Information/', views.Information, name='Inform'),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

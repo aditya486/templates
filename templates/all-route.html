@@ -1,0 +1,1149 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body_block %}
+
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col menu_fixed">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <!-- <a href="#" class="site_title"><img src="images/logo-small.png" alt=""></a> -->
+                    </div>
+                    <!-- menu profile quick info -->
+                    <div class="profile clearfix">
+                        <div class="profile_info">
+                            <!-- <a href="#" class="profile-logo"><img src="images/CBM-logo-side.png" alt=""></a> -->
+                            <div class="profile-name">
+                                <h2>CBM Pte Ltd</h2>
+                                <p>cbm@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /menu profile quick info -->
+                    <!-- sidebar menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <ul class="nav side-menu">
+                                <li><a>Dashboard</a> </li>
+                                <li><a>Add Worksite </a></li>
+                                <li><a>Route Listing </a></li>
+                                <li><a>User Management <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="#">Link 1</a></li>
+                                        <li><a href="#">Link 2</a></li>
+                                        <li><a href="#">Link 3</a></li>
+                                    </ul>
+                                </li>
+                                <li><a>Reporting <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="#">Incident Reports</a></li>
+                                        <li><a href="#">Patrol Reports</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /sidebar menu -->
+                </div>
+            </div>
+            <!-- page content -->
+            <div class="right_col" role="main">
+                <!-- top navigation -->
+                <div class="top_nav">
+                    <div class="nav_menu">
+                        <nav>
+                            <div class="nav toggle">
+                                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                            </div>
+                            <div class="page-title">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h2>Route Listing </h2>
+                                        <a class="brad" href="#">Dashboard</a> <span>/ All Route </span>
+                                    </div>
+                                    <div class="col-md-6 search-action">
+                                        <div class="input-group">
+                                            <span class="input-group-addon" id="basic-addon1"><i
+                                                    class="fa fa-search"></i></span>
+                                            <input type="text" class="form-control" placeholder="Search this list..."
+                                                aria-describedby="basic-addon1">
+                                        </div>
+                                        <a href="#modal-default" class="btn btn-primary" data-toggle="modal">Add
+                                            Route</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <!-- /top navigation -->
+                <div class="wrapper">
+                    <div class="details">
+                        <div id="table-scroll" class="table-scroll">
+                            <div class="table-wrap">
+                                <table class="main-table table table-striped" id="example">
+                                    <tfoot>
+                                        <tr>
+                                            <td scope="col"><input class="filter" type="text"></td>
+                                            <td scope="col"><input class="filter" type="text"></td>
+                                            <td scope="col"><input class="filter" type="text"></td>
+                                            <td scope="col"><input class="filter" type="text"></td>
+                                            <td scope="col"><input class="filter" type="text"></td>
+                                        </tr>
+                                    </tfoot>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Route ID</th>
+                                            <th class="third-item" scope="col">Route Name</th>
+                                            <th scope="col">Worksite</th>
+                                            <th scope="col">Total checkpoints</th>
+                                            <th scope="col">Total Time Slots</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbdkjnjfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbdfn kbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbdk nnkjnfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                      <tr>
+                                        <td><a href="#">hbhbhbh</a></td>
+                                        <td>bhjbhb</td>
+                                        <td>jjnj</td>
+                                        <td>dfbdfbd</td>
+                                        <td>dfbnhnjnjdfbd</td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /page content -->
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-default">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Add / Update Route</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Route Name</label>
+                                <input type="text" placeholder="" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Worksite</label>
+                                <input type="text" placeholder="" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Add or Remove Time</label>
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control timepicker">
+                                            <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#" class="btn btn-plus"><i class="fa fa-plus"></i></a>
+                                        <a href="#" class="btn btn-minus"><i class="fa fa-times"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer text-right">
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    {% endblock %}
+    {% block script %}
+    <script>
+      $(document).ready(function() {
+
+          var yourTable = $('#example').DataTable( {
+
+            dom: 'Blfrtip',
+    columnDefs: [],
+    'pageLength': 10,
+    lengthMenu: [[10, 25, 50, -1], [10, 25, 50, "All"]],
+            // retrieve: true,
+            // paging: false,
+            buttons: [
+            'pageLength'
+        ]
+
+        } );
+        // $( ".third-item" ).nextAll().addBack().css( "background-color", "green" );
+        // console.log('HHHHHHHHHHH')
+
+      } );
+    </script>
+    {% endblock %}

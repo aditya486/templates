@@ -1,0 +1,194 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body_block %}
+
+<body class="nav-md">
+  <div class="container body">
+    <div class="main_container">
+      <div class="col-md-3 left_col menu_fixed">
+        <div class="left_col scroll-view">
+          <div class="navbar nav_title" style="border: 0;">
+            <a href="#" class="site_title"><img src="{% static 'images/logo-small.png' %}" alt=""></a>
+          </div>
+          <div class="profile clearfix">
+            <div class="profile_info">
+              <a href="#" class="profile-logo"><img src="{% static 'images/CBM-logo-side.png' %}" alt=""></a>
+              <div class="profile-name">
+                <h2>CBM Pte Ltd</h2>
+                <p>cbm@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <!-- /menu profile quick info -->
+          <!-- sidebar menu -->
+          <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+            <div class="menu_section">
+              <ul class="nav side-menu">
+                <li><a>Dashboard</a> </li>
+                <li><a>Add Worksite </a></li>
+                <li><a>Route Listing </a></li>
+                <li><a>User Management <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                  </ul>
+                </li>
+                <li><a>Reporting <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="#">Incident Reports</a></li>
+                    <li><a href="#">Patrol Reports</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- /sidebar menu -->
+        </div>
+      </div>
+      <!-- page content -->
+      <div class="right_col" role="main">
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+              <div class="page-title">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h2>Add Worksite </h2>
+                    <a class="brad" href="#">Dashboard</a> <span>/ Add Worksite </span>
+                  </div>
+                  <div class="col-md-6 search-action">
+                    <a href="#" class="btn btn-primary">Export Report</a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+        <div class="wrapper">
+          <div class="details">
+            <div class="info-bg">
+              <form action="" method="POST" novalidate>
+                {% csrf_token %}
+                {% for field in form %}
+                {% if forloop.counter == 1 %}
+                <div class="row">
+                  {% endif %}
+                  {% if forloop.counter == 1 or forloop.counter == 2 or forloop.counter == 3 %}
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label>{{ field.label }}</label>
+                      {{ field }}
+                    </div>
+                    <span class="text-danger">{{ field.errors }}</span>
+                  </div>
+                  {% endif %}
+                  {% if forloop.counter == 4 %}
+                </div>
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="row">
+                      {% endif %}
+                      {% if forloop.counter == 4 or forloop.counter == 5 %}
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>{{ field.label }}</label>
+                          {{ field }}
+                        </div>
+                        <span class="text-danger">{{ field.errors }}</span>
+                      </div>
+                      {% endif %}
+                      {% if forloop.counter == 6 %}
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label>{{ field.label }} </label>
+                          {{ field }}
+                        </div>
+                        <span class="text-danger">{{ field.errors }}</span>
+                      </div>
+                    </div>
+                  </div>
+                  {% endif %}
+                  {% if forloop.counter == 7 %}
+                  <div class="col-md-4">
+                    <div class="form-group" id="fullGang">
+                      <label>{{ field.label }}</label>
+                      <div class="row">
+                        <div class="col-md-8">
+                          {{ field }}
+                          <span class="text-danger">{{ field.errors }}</span>
+                        </div>
+                        <div class="col-md-4">
+                          <button type="button" id="add-device" name="button" class="btn btn-plus"><i class="fa fa-plus"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+                <div class="row">
+                  <div class="col-md-12 text-right">
+                    <button type="button" class='btn btn-cancle'>Cancel</button>
+                    <input type="submit" class="btn btn-primary" value="Save">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /page content -->
+    {% endblock %}
+    {% block script %}
+    <script type="text/javascript">
+      // Remove device Function
+      function removeDevice(elem) {
+        var device_counter = localStorage.getItem('device_counter');
+        $(elem).parent().parent().parent().remove();
+        device_counter -= 1;
+        localStorage.setItem('device_counter', device_counter);
+      }
+      $(document).ready(function() {
+
+        $('#id_name').datetimepicker({
+           format: 'hh:mm',
+           // timeFormat: 'hh:mm tt',
+           minView: 4,
+           maxView: 3,
+           autoclose: true
+        });
+        // Add Device
+        var device_counter = 1;
+        localStorage.setItem('device_counter', device_counter);
+        $('#add-device').click(function() {
+          var device_counter = localStorage.getItem('device_counter');
+          if (device_counter <= 9) {
+            html = "<div class='form-group'>\
+              <label>Device IMEI / IMEI1 Number</label>\
+              <div class='row'>\
+                <div class='col-md-8'>\
+                  <input type='text' name='device' maxlength='15' class='form-control' required id='id_device'>\
+                </div>\
+                <div class='col-md-4'>\
+                  <button onclick='removeDevice(this)' type='button' id='rem-device-" + device_counter + "' name='button' class='btn btn-minus'><i class='fa fa-times'></i></button>\
+                </div>\
+              </div>\
+            </div>"
+
+            $('#fullGang').after(html);
+            device_counter = parseInt(device_counter) + 1;
+            localStorage.setItem('device_counter', device_counter);
+          } else {
+            alert('Sorry! You can add upto 10 devices only.');
+          }
+        });
+      });
+    </script>
+    {% endblock %}

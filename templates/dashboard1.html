@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.ico" type="image/ico" />
+    <title>Infornest</title>
+    <!-- Bootstrap -->
+    <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- jQuery custom content scroller -->
+    <link href="vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
+    <!-- bootstrap-daterangepicker -->
+    <link href="vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <!-- Datatables -->
+    <link href="vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+    <!-- Select2 -->
+    <link href="vendors/select2/dist/css/select2.min.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <!-- bootstrap-datetimepicker -->
+    <link href="vendors/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col menu_fixed">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a href="#" class="site_title"><img src="images/logo-small.png" alt=""></a>
+                    </div>
+                    <!-- menu profile quick info -->
+                    <div class="profile clearfix">
+                        <div class="profile_info">
+                            <a href="#" class="profile-logo"><img src="images/CBM-logo-side.png" alt=""></a>
+                            <div class="profile-name">
+                                <h2>CBM Pte Ltd</h2>
+                                <p>cbm@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /menu profile quick info -->
+                    <!-- sidebar menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <ul class="nav side-menu">
+                                <li><a>Dashboard</a> </li>
+                                <li><a>Add Worksite </a></li>
+                                <li><a>Route Listing </a></li>
+                                <li><a>User Management <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="#">Link 1</a></li>
+                                        <li><a href="#">Link 2</a></li>
+                                        <li><a href="#">Link 3</a></li>
+                                    </ul>
+                                </li>
+                                <li><a>Reporting <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="#">Incident Reports</a></li>
+                                        <li><a href="#">Patrol Reports</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /sidebar menu -->
+                </div>
+            </div>
+            <!-- page content -->
+            <div class="right_col" role="main">
+                <!-- top navigation -->
+                <div class="top_nav">
+                    <div class="nav_menu">
+                        <nav>
+                            <div class="nav toggle">
+                                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                            </div>
+                            <div class="page-title">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h2>Dashboard</h2>
+                                    </div>
+                                    <div class="col-md-6 search-action">
+                                        <img src="images/CBM_logo-top.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <!-- /top navigation -->
+                <div class="wrapper">
+                    <div class="dashboard">
+                        <div class="row">
+                            <div class="col-md-3 dash-datetime">
+                                <label>Date <i class="fa fa-calendar"></i></label>
+                                <p>29-Apr-2019</p>
+                            </div>
+                            <div class="col-md-3 dash-datetime">
+                                <label>Day <i class="fa fa-sun-o"></i></label>
+                                <p>Wednesday</p>
+                            </div>
+                            <div class="col-md-3 dash-datetime">
+                                <label>Time <i class="fa fa-clock-o"></i></label>
+                                <p>07:30 PM</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3" id="dragAnwr" draggable="true">
+                                <div class="dash-data green">
+                                    <span>1/4<br><small>Attenjjjdance</small></span>
+                                    <h2>CBM</h2>
+                                    <div class="details-dash">
+                                        <div class="row">
+                                            <div class="col-md-8">Incidents</div>
+                                            <div class="col-md-4 text-right"><strong>8</strong></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-8">Irregular Patrols</div>
+                                            <div class="col-md-4 text-right"><strong>8</strong></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-8">Monthly
+                                                Supervisory Check</div>
+                                            <div class="col-md-4 text-right"><strong>8</strong></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 dropbox">
+                                <div class="dash-data red">
+                                    <span>1/4<br><small>Attendance</small></span>
+                                    <h2>Certis</h2>
+                                    <div class="details-dash">
+                                        <div class="row">
+                                            <div class="col-md-8">Incidents</div>
+                                            <div class="col-md-4 text-right"><strong>8</strong></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-8">Irregular Patrols</div>
+                                            <div class="col-md-4 text-right"><strong>8</strong></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-8">Monthly
+                                                Supervisory Check</div>
+                                            <div class="col-md-4 text-right"><strong>8</strong></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-md-3 dropbox">
+                                <div class="dash-data green">
+                                    <span>1/4<br><small>Attendance</small></span>
+                                    <h2>Gilb Ltd</h2>
+                                    <div class="details-dash">
+                                        <div class="row">
+                                            <div class="col-md-8">Incidents</div>
+                                            <div class="col-md-4 text-right"><strong>8</strong></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-8">Irregular Patrols</div>
+                                            <div class="col-md-4 text-right"><strong>8</strong></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-8">Monthly
+                                                Supervisory Check</div>
+                                            <div class="col-md-4 text-right"><strong>8</strong></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!-- <div class="col-md-3 dropbox">
+                                <div class="dash-data purple">
+                                    <span>1/4<br><small>Attendance</small></span>
+                                    <h2>Lou Pte Ltd</h2>
+                                    <div class="details-dash">
+                                        <div class="row">
+                                            <div class="col-md-8">Incidents</div>
+                                            <div class="col-md-4 text-right"><strong>8</strong></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-8">Irregular Patrols</div>
+                                            <div class="col-md-4 text-right"><strong>8</strong></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-8">Monthly
+                                                Supervisory Check</div>
+                                            <div class="col-md-4 text-right"><strong>8</strong></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!-- <div class="col-md-3 dropbox">
+                                <div class="dash-data green">
+                                    <span>1/4<br><small>Attendance</small></span>
+                                    <h2>MyGPS</h2>
+                                    <div class="details-dash">
+                                        <div class="row">
+                                            <div class="col-md-8">Incidents</div>
+                                            <div class="col-md-4 text-right"><strong>8</strong></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-8">Irregular Patrols</div>
+                                            <div class="col-md-4 text-right"><strong>8</strong></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-8">Monthly
+                                                Supervisory Check</div>
+                                            <div class="col-md-4 text-right"><strong>8</strong></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!-- <div class="col-md-3 dropbox">
+                                <div class="dash-data purple">
+                                    <span>1/4<br><small>Attendance</small></span>
+                                    <h2>MyGPS</h2>
+                                    <div class="details-dash">
+                                        <div class="row">
+                                            <div class="col-md-8">Incidents</div>
+                                            <div class="col-md-4 text-right"><strong>8</strong></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-8">Irregular Patrols</div>
+                                            <div class="col-md-4 text-right"><strong>8</strong></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-8">Monthly
+                                                Supervisory Check</div>
+                                            <div class="col-md-4 text-right"><strong>8</strong></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /page content -->
+        </div>
+    </div>
+    <!-- jQuery -->
+
+
+    </script>
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="vendors/fastclick/lib/fastclick.js"></script>
+    <!-- iCheck -->
+    <script src="vendors/iCheck/icheck.min.js"></script>
+    <!-- DateJS -->
+    <script src="vendors/DateJS/build/date.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="vendors/moment/min/moment.min.js"></script>
+    <script src="vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- jQuery custom content scroller -->
+    <script src="vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- Datatables -->
+    <script src="vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+    <script src="vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+    <script src="vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+    <script src="vendors/jszip/dist/jszip.min.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="js/custom.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- <script>
+        jQuery(document).ready(function () {
+            jQuery(".main-table").clone(true).appendTo('#table-scroll').addClass('clone');
+        });
+    </script> -->
+    <script type="text/javascript">
+  // $( function() {
+  //   $( "#dragAnwr" ).draggable();
+  // } );
+        $( "#dragAnwr" ).draggable({ axis: "x" });
+
+$( ".dropbox" ).droppable({
+    drop: function( event, ui ) {
+        // remove flag class
+        $(this).siblings().removeClass('selected');
+        // add class to the dropped element
+        $(this).addClass('selected');
+    },
+    hoverClass: "drop-hover"
+    });
+</script>
+</body>
+
+</html>
